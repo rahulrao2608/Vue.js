@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <style>
+        .fixImageSize {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="my-app">
+        <a v-bind:href="ulink" v-bind:title="title"> {{name}}</a><br /><br />
+        <img v-bind:src="imageLink" alt="Vue.js Logo" v-bind:class="{fixImageSize:isActive}"><br /><br />
+        <br />
+
+        <form method="post">
+            <input type="text" v-bind:value="txtName" placeholder="Name">
+            <input type="text" v-bind:value="txtEmail" placeholder="Email">
+            <button type="button" name="button">Submit</button>
+        </form>
+        <br />
+        <div v-html="htmlContent"></div>
+    </div>
+    <script src="Video-4.js"></script>
+</body>
+
+</html>
