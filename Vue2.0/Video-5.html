@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="my-app">
+        <h3> Counter : {{ counter }} </h3>
+        <!-- click events in Vue.js 2.0 -->
+        <!-- <button type="button" name="button" @click="counter++">Increment by 1</button> -->
+        <button type="button" name="button" v-on:click="increment(1)">Increment by 1</button>
+        <button type="button" name="button" @click="decrement(1)">Decrement by 1</button>
+
+        <!--Double click events in Vue.js 2.0 -->
+        <button type="button" v-on:dblclick="increment(5)">Increment by 5</button>
+        <button type="button" @dblclick="decrement(5)">Decrement by 5</button>
+    </div>
+    <script src="Video-5.js"></script>
+</body>
+
+</html>
